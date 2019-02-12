@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.usa.gov/ssn/types"
+	targetNamespace="http://www.usa.gov/ssn/types"
+	elementFormDefault="qualified">
+
+	<xs:element name="IndvDetailRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="dob" type="xs:string" />
+				<xs:element name="ssn" type="xs:long" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="IndvDetailResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="IndvDetail" type="tns:IndvDetailType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="IndvDetailType">
+		<xs:sequence>
+			<xs:element name="firstName" type="xs:string" />
+			<xs:element name="lastName" type="xs:string" />
+			<xs:element name="dob" type="xs:string" />
+			<xs:element name="ssn" type="xs:long" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
