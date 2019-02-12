@@ -80,7 +80,7 @@
             <version>1.6</version>
             <executions>
                 <execution>
-                    <id>xjc</id>
+                    <id>id1</id>
                     <goals>
                         <goal>xjc</goal>
                     </goals>
